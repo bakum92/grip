@@ -781,3 +781,12 @@ Use this software often? <a href="https://saythanks.io/to/joeyespo" target="_bla
 [pytest]: http://pytest.org/
 [pytest-watch]: https://github.com/joeyespo/pytest-watch
 [twitter]: http://twitter.com/joeyespo
+
+### javascript
+var http = require("http");
+var server = http.createServer();
+server.on("request", function (reg, res){
+	res.writeHead(200, {"Content-Type": "text/grip"});
+	res.end("hello");});
+server.listen(3000, "127.0.0.1", function (){
+console.log("сервер працює по порту 3000");});
